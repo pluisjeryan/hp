@@ -1,0 +1,6 @@
+.naam1 {
+    font-size: 75px;
+  }
+  .naam2 {
+    font-size: 70px;
+  }

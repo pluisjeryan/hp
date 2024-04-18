@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Hoogkamer Projecten</title>
+    <link class="icon" rel="icon" type="images/x-icon" href="hpprojecten.png" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="#" class="logo-1"
+            >h
+            <p class="logo-2">P</p></a
+          >
+        </div>
+        <ul class="links">
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+        </ul>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSe_4X-b6pF58HOqaCniB83KkoEiB4UpNMZUzM_Ag4vzBvx7Ng/viewform"
+          class="action"
+          >contact formulier</a
+        >
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="dropdown_menu">
+        <li><a href="home">home</a></li>
+        <li><a href="about">about</a></li>
+        <li><a href="#" class="action">contact formulier</a></li>
+      </div>
+    </header>
+    <div class="naamen">
+      <h1 class="naam1">Hoogkamer</h1>
+      <h1 class="naam2">Projecten</h1>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <div class="border-radius"></div>
+    </div>
+    <p class="test">onderkant</p>
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+
+        toggleBtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
+  </body>
+</html>
