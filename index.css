@@ -71,9 +71,11 @@ header {
 }
 .logo-1 {
   color: #385724;
+  display: inline-block;
 }
 .logo-2 {
   color: #9b780f;
+  display: inline-block;
 }
 .action:hover {
   scale: 1.05;
